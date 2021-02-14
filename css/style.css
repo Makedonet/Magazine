@@ -87,5 +87,70 @@ h6 {
 }
 
 body {
-  margin: 0 auto;
+  font-family: "TT Norms Pro";
+  font-size: 16px;
+  color: black;
+}
+
+*:focus {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+header {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+
+header .nav {
+  height: 100px;
+}
+
+header .menu-right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-right .menu-contact {
+  margin-right: 35px;
+}
+
+header .menu-right .menu-contact a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+header .menu-right .menu-contact a img {
+  margin-right: 5px;
+}
+
+header .menu-right .menu-user a,
+header .menu-right .menu-user button {
+  margin-left: 30px;
+}
+
+header .menu-right .menu-user button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  padding: 0 22px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00ac4e;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }

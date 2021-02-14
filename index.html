@@ -1,16 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <title>Магазин</title>
 </head>
 
 <body>
-    <h1>Hello!</h1>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <div class="container-fluid">
+
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Меню
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Супы</a></li>
+                                        <li><a class="dropdown-item" href="#">Хачапури</a></li>
+                                        <li><a class="dropdown-item" href="#"></a>Холодные закуски</li>
+                                        <li><a class="dropdown-item" href="#"></a>Хинкали</li>
+                                        <li><a class="dropdown-item" href="#"></a>Шашлык</li>
+                                        <li><a class="dropdown-item" href="#"></a>Соусы</li>
+                                        <li><a class="dropdown-item" href="#"></a>Салаты/li>
+                                        <li><a class="dropdown-item" href="#"></a>Горячие блюда</li>
+                                        <li><a class="dropdown-item" href="#"></a>Гарнир</li>
+                                        <li><a class="dropdown-item" href="#"></a>Десерты</li>
+                                        <li><a class="dropdown-item" href="#"></a>Напитки</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Доставка</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Бронь стола</a>
+                                </li>
+                            </ul>
+                            <div class="menu-right d-flex">
+                                <div class="menu-contact">
+                                    <a href="tel:+79811052533">
+                                        <img src="img/phone.svg" alt="">
+                                        <span>+7 (981) 105 25 33</span>
+                                    </a>
+                                </div>
+                                <div class="menu-user">
+                                    <button class="profile">
+                                        <img src="img/person.svg" alt="">
+                                    </button>
+                                    <a href="" class="cart">
+                                        <img src="img/shopping-cart.svg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
