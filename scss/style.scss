@@ -58,6 +58,12 @@ header {
     }
     .navbar-light .navbar-nav {
         .nav-item {
+            &.active {
+                .nav-link {
+                    color: #00ac4e;
+                }
+            }
+
             &.dropdown {
                 a {
                     position: relative;
@@ -197,6 +203,8 @@ header {
         .swiper-container-menu {
             position: relative;
             overflow: hidden;
+            left: -16px;
+            width: calc(100% + 16px);
             a {
                 font-family: "TT Hoves";
                 font-size: 23px;
@@ -204,6 +212,13 @@ header {
                 color: #4f4f4f;
                 text-transform: uppercase;
                 width: auto !important;
+                padding: 8px 16px;
+
+                &.active {
+                    background: #00ac4e;
+                    color: white;
+                    border-radius: 5px;
+                }
             }
         }
     }
@@ -490,6 +505,203 @@ footer {
                     line-height: 32px;
                     img {
                         margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.green_btn {
+    background: #00ac4e;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 38px;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.default_btn {
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22.2162px;
+    line-height: 29px;
+    text-align: center;
+    color: #00ac4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-left: 9px;
+        position: relative;
+        top: 1px;
+    }
+
+    &:hover {
+        color: #00ac4e;
+    }
+}
+
+.page-content {
+    padding: 45px 0 60px;
+
+    h1 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #828282;
+    }
+}
+
+.form-support {
+    width: 672px;
+
+    textarea {
+        font-family: "TT Hoves";
+        background: #f9f9f9;
+        border-radius: 5px;
+        height: 174px;
+        width: 100%;
+        padding: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 21px;
+        color: #bdbdbd;
+        margin-bottom: 54px;
+    }
+
+    button {
+        width: 190px;
+        height: 60px;
+        background: #00ac4e;
+        border-radius: 7.8169px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18.7606px;
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.card {
+    padding: 60px 0;
+    .card-top {
+        display: flex;
+        justify-content: space-between;
+        .card-img {
+            width: 67%;
+            height: 427px;
+            background: #f9f9f9;
+            border-radius: 15px;
+            background-image: url(../img/card-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .card-sidebar {
+            width: 30%;
+            background: #ffffff;
+            box-shadow: 0px 0px 27.1091px rgba(0, 0, 0, 0.06);
+            border-radius: 15px;
+            padding: 30px;
+
+            .title {
+                font-weight: 500;
+                font-size: 18.0727px;
+                line-height: 23px;
+                color: #000000;
+            }
+
+            .rating {
+                span {
+                    background: url(../img/star.svg);
+                    width: 13px;
+                    height: 13px;
+                    display: inline-block;
+                    &.active {
+                        background: url(../img/star-green.svg);
+                    }
+                }
+            }
+
+            .reviews {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12.6509px;
+                line-height: 19px;
+                color: #c6c6c6;
+            }
+
+            .price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-weight: 500;
+                    font-size: 14.4582px;
+                    line-height: 22px;
+                    color: #c6c6c6;
+
+                    b {
+                        font-weight: 500;
+                        font-size: 18.0727px;
+                        line-height: 23px;
+                        color: #000000;
+                    }
+
+                    .input_range {
+                        width: 116.57px;
+                        height: 42.47px;
+                        left: 1070.61px;
+                        top: 386.81px;
+                        background: #fcfcfc;
+                        border: 0.903636px solid #ebebeb;
+                        box-sizing: border-box;
+                        border-radius: 9.03636px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+
+                        span.button {
+                            width: 30%;
+                            text-align: center;
+                        }
+
+                        input {
+                            width: 40%;
+                            text-align: center;
+                            border: none;
+                            background: none;
+                        }
                     }
                 }
             }
