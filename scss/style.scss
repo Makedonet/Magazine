@@ -632,15 +632,20 @@ footer {
             box-shadow: 0px 0px 27.1091px rgba(0, 0, 0, 0.06);
             border-radius: 15px;
             padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             .title {
                 font-weight: 500;
                 font-size: 18.0727px;
                 line-height: 23px;
                 color: #000000;
+                margin-bottom: -20px;
             }
 
             .rating {
+                margin-bottom: -16px;
                 span {
                     background: url(../img/star.svg);
                     width: 13px;
@@ -669,40 +674,107 @@ footer {
                     font-size: 14.4582px;
                     line-height: 22px;
                     color: #c6c6c6;
+                }
+                b {
+                    font-weight: 500;
+                    font-size: 18.0727px;
+                    line-height: 23px;
+                    color: #000000;
+                }
 
-                    b {
-                        font-weight: 500;
-                        font-size: 18.0727px;
-                        line-height: 23px;
-                        color: #000000;
+                .input_range {
+                    width: 116.57px;
+                    height: 42.47px;
+                    background: #fcfcfc;
+                    border: 0.903636px solid #ebebeb;
+                    box-sizing: border-box;
+                    border-radius: 9.03636px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    font-weight: normal;
+                    font-size: 12.6509px;
+                    line-height: 19px;
+                    color: #000000;
+                    position: relative;
+                    &:after {
+                        content: attr(data-desc);
+                        position: absolute;
+                        bottom: -18px;
+                        right: 0;
+                        font-size: 9.03636px;
+                        line-height: 14px;
+                        color: #c6c6c6;
                     }
 
-                    .input_range {
-                        width: 116.57px;
-                        height: 42.47px;
-                        left: 1070.61px;
-                        top: 386.81px;
-                        background: #fcfcfc;
-                        border: 0.903636px solid #ebebeb;
-                        box-sizing: border-box;
-                        border-radius: 9.03636px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                    span.button {
+                        width: 32%;
                         text-align: center;
-
-                        span.button {
-                            width: 30%;
-                            text-align: center;
-                        }
-
-                        input {
-                            width: 40%;
-                            text-align: center;
-                            border: none;
-                            background: none;
+                        cursor: pointer;
+                        &.plus {
+                            color: #00ac4e;
                         }
                     }
+
+                    input {
+                        width: 36%;
+                        text-align: center;
+                        border: none;
+                        background: none;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: #000;
+                    }
+                }
+            }
+
+            .to-pay {
+                margin-bottom: 12px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-weight: 500;
+                    font-size: 14.4582px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+                b {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18.0727px;
+                    line-height: 23px;
+                    color: #00ac4e;
+                }
+            }
+
+            .pay-block {
+                display: flex;
+                justify-content: space-between;
+                .cart-add {
+                    background-image: url(../img/btn-cart.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 49px;
+                    height: 49px;
+                    background-color: #00ac4e;
+                    border-radius: 5px;
+                }
+                .pay-popup {
+                    width: 215px;
+                    height: 49px;
+                    background: #00ac4e;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: #ffffff;
                 }
             }
         }

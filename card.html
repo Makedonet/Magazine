@@ -131,23 +131,25 @@
                         </div>
                         <div class="price">
                             <span>Количество</span>
-                            <div class="input_range">
+                            <div class="input_range" data-desc="Ед. изм.: упаковка">
                                 <span class="min button">
-                                    -
+                                    <img src="img/minus.png" alt="">
                                 </span>
                                 <input type="text" name="qty" id="qty" maxlength="12">
                                 <span class="plus button">
-                                    +
+                                    <img src="img/plus.png" alt="">
                                 </span>
                             </div>
                         </div>
-                        <div class="to-pay">
-                            <span>Итого к оплате</span>
-                            <b>1 050 ₽</b>
-                        </div>
-                        <div class="pay-block">
-                            <button class="pay-popup">Купить</button>
-                            <button class="cart-add"></button>
+                        <div class="pay-bottom">
+                            <div class="to-pay">
+                                <span>Итого к оплате</span>
+                                <b>1 050 ₽</b>
+                            </div>
+                            <div class="pay-block">
+                                <button class="pay-popup">Купить</button>
+                                <button class="cart-add"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -221,50 +223,23 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 
     <script>
-
-
-
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-        });
-        const menuSwiper = new Swiper('.swiper-container-menu', {
-            slidesPerView: 'auto',
-            spaceBetween: 63,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
-
-
-
-        $('.play_yt').click(function () {
-            $(this).hide();
-            $('.ytvideo').attr('src', 'https://www.youtube.com/embed/uWuxJwhvCUg?autoplay=1');
-        });
-
         jQuery(function () {
             var j = jQuery;
             var addInput = '#qty';
             var n = 1;
 
-            j(addInput).val(n + 'шт.');
+            j(addInput).val(n + ' шт.');
 
             j('.plus').on('click', function () {
-                j(addInput).val(++n + 'шт.');
+                j(addInput).val(++n + ' шт.');
             })
 
             j('.min').on('click', function () {
                 if (n >= 1) {
-                    j(addInput).val(--n + 'шт.');
+                    j(addInput).val(--n + ' шт.');
                 } else {
 
                 }
