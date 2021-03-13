@@ -1022,6 +1022,85 @@ footer .footer-wrapper .footer-right .person a img {
   width: 67%;
 }
 
+.card .card-botton .card-info .nav-pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 35px;
+  margin-bottom: 40px;
+}
+
+.card .card-botton .card-info .nav-pills .nav-link {
+  font-size: 28.8639px;
+  line-height: 19px;
+  color: #828282;
+  padding: 0;
+}
+
+.card .card-botton .card-info .nav-pills .nav-link.active {
+  font-weight: 500;
+  font-size: 28.8639px;
+  line-height: 19px;
+  color: #00ac4e;
+  background-color: white;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane {
+  padding: 0;
+  position: relative;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane .product_ul {
+  padding: 0;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane .product_ul li {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #828282;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane .product_ul li b {
+  font-weight: 500;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane h2.tab {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18.0399px;
+  line-height: 19px;
+  color: #828282;
+  padding-right: 35px;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane .slider-reviews {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane .slider-reviews .swiper-wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card .card-botton .card-info .tab-content > .tab-pane .slider-reviews .swiper-wrapper .swiper-slide {
+  background: #f2f2f2 !important;
+  border-radius: 11px;
+}
+
 .card .card-botton .card-sidebar {
   width: 30%;
   background: #ffffff;

@@ -785,6 +785,77 @@ footer {
         justify-content: space-between;
         .card-info {
             width: 67%;
+            .nav-pills {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 35px;
+                margin-bottom: 40px;
+
+                .nav-link {
+                    font-size: 28.8639px;
+                    line-height: 19px;
+                    color: #828282;
+                    padding: 0;
+                    &.active {
+                        font-weight: 500;
+                        font-size: 28.8639px;
+                        line-height: 19px;
+                        color: #00ac4e;
+                        background-color: white;
+                    }
+                }
+            }
+
+            .tab-content {
+                > .tab-pane {
+                    padding: 0;
+                    position: relative;
+
+                    .product_ul {
+                        padding: 0;
+                        li {
+                            font-style: normal;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #828282;
+                            b {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    h2.tab {
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 19px;
+                        color: #000000;
+                        margin-bottom: 22px;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18.0399px;
+                        line-height: 19px;
+                        color: #828282;
+                        padding-right: 35px;
+                    }
+
+                    .slider-reviews {
+                        position: relative;
+                        overflow: hidden;
+
+                        .swiper-wrapper {
+                            justify-content: flex-start;
+
+                            .swiper-slide {
+                                background: rgba(242, 242, 242, 75%) !important;
+                                border-radius: 11px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .card-sidebar {
             width: 30%;
