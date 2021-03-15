@@ -352,27 +352,27 @@ header .menu-right .menu-user button {
       flex-wrap: wrap;
 }
 
-.home-products .products-wrapper .product {
-  width: 205px;
+.home-products .products-wrapper .goods-out {
+  width: 300px;
   margin-bottom: 56px;
 }
 
-.home-products .products-wrapper .product .img {
+.home-products .products-wrapper .goods-out .img {
   background-image: url(../img/productbg.png);
   background-color: #e6e6e6;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4.52641px;
-  height: 125px;
+  height: 250px;
   overflow: hidden;
 }
 
-.home-products .products-wrapper .product .img img {
+.home-products .products-wrapper .goods-out .img img {
   width: 100%;
   height: 100%;
 }
 
-.home-products .products-wrapper .product .title {
+.home-products .products-wrapper .goods-out .title {
   margin: 9px 0 5px;
   display: block;
   font-weight: 500;
@@ -381,39 +381,47 @@ header .menu-right .menu-user button {
   color: #000000;
 }
 
-.home-products .products-wrapper .product .description {
+.home-products .products-wrapper .goods-out .description {
   font-size: 12.674px;
   line-height: 19px;
   color: #000000;
   margin-bottom: 8px;
 }
 
-.home-products .products-wrapper .product .rating span {
+.home-products .products-wrapper .goods-out .rating {
+  width: 100%;
+}
+
+.home-products .products-wrapper .goods-out .rating span {
   background: url(../img/star.svg);
   width: 13px;
   height: 13px;
   display: inline-block;
 }
 
-.home-products .products-wrapper .product .rating span.active {
+.home-products .products-wrapper .goods-out .rating span.active {
   background: url(../img/star-green.svg);
 }
 
-.home-products .products-wrapper .product .price b {
+.home-products .products-wrapper .goods-out .price {
+  width: 100%;
+}
+
+.home-products .products-wrapper .goods-out .price b {
   font-weight: 500;
-  font-size: 18.1056px;
+  font-size: 19px;
   line-height: 23px;
   color: #000000;
   margin-right: 18px;
 }
 
-.home-products .products-wrapper .product .price span {
+.home-products .products-wrapper .goods-out .price span {
   font-size: 12.674px;
   line-height: 23px;
   color: #828282;
 }
 
-.home-products .products-wrapper .product a.to-cart {
+.home-products .products-wrapper .goods-out a.to-cart {
   margin-top: 13px;
   width: 140px;
   height: 38px;
@@ -729,12 +737,25 @@ footer .footer-wrapper .footer-right .person a img {
   margin-bottom: 25px;
 }
 
+.page-content h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
 .page-content p {
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
   color: #828282;
+}
+
+.page-content p span {
+  color: #000;
 }
 
 .form-support {

@@ -392,6 +392,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
+        // Счетчик
         jQuery(function () {
             var j = jQuery;
             var addInput = '#qty';
@@ -412,6 +413,7 @@
             });
         });
 
+        // Слайдер отзывов
         var tabEl = document.querySelector('.rev-swiper')
         tabEl.addEventListener('shown.bs.tab', function (e) {
             var swiperReviews = new Swiper('.slider-reviews', {
