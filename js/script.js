@@ -25,6 +25,8 @@
 // }
 
 // renderCart();
+var cart = {};
+
 function init() {
     // Вычитуем файл goods.json
     $.getJSON("goods.json", goodsOut);
@@ -55,13 +57,52 @@ function goodsOut(data) {
         <span></span>
         </div>`;
         out += `<div class="price"><b>${data[key].cost} ${data[key].cost2}</b></div>`;
-        out += `<a href="" class="to-cart" data-id="shs824">В корзину</a>`;
+        out += `<button class="to-cart" data-id="${key}">В корзину</button>`;
         out += '</div>';
 
     }
     $('.goods-out').html(out);
+    $('.to-cart').on('click', addToCart);
+}
+
+function addToCart() {
+    //Добавляем товар в корзину
+    var id = $(this).attr('data-id');
+    // console.log(id);
+    if (cart[id] == undefined) {
+        cart[id] = 1;
+    }
+    else {
+        cart[id]++;
+    }
+    showMiniCart();
+    saveCart();
+}
+
+function saveCart() {
+    //сохраняю корзину в localStorage
+    localStorage.setItem('cart', JSON.stringify(cart)); //корзину в строку
+}
+
+function showMiniCart() {
+    //Показываю мини корзину
+    var out = "";
+    for (var key in cart) {
+        out += key + ' --- ' + cart[key] + '<br>';
+    }
+    $('.main-cart').html(out);
+}
+
+function loadCart() {
+    //Проверяю есть ли в localStorage запись cart
+    if (localStorage.getItem('cart')) {
+        //Если есть - расшифровываю и записываю в переменную cart
+        cart = JSON.parse(localStorage.getItem('cart'));
+        showMiniCart();
+    }
 }
 
 $(document).ready(function () {
     init();
+    loadCart();
 });
